@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mensaje sorpresa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      text-align: center;
+    }
+    .mensaje {
+      background: white;
+      padding: 2em;
+      border-radius: 1em;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <div class="mensaje" id="mensaje"></div>
+  <script>
+    const mensajes = [
+      "✨ Eres increíble, nunca lo olvides.",
+      "🌈 Hoy es un gran día para sonreír.",
+      "💡 Todo comienza con una idea.",
+      "🚀 Estás más cerca de tus metas de lo que crees.",
+      "🌻 Lo mejor está por venir.",
+      "🔥 Sigue brillando con fuerza.",
+      "🎯 Cree en ti mismo.",
+      "🌙 Tómate un momento para respirar.",
+      "💫 Cada día es una nueva oportunidad.",
+      "🌞 Gracias por estar aquí.",
+      "🍀 La suerte te sonríe hoy.",
+      "❤️ Alguien piensa en ti con cariño.",
+      "🦋 Cambia tu energía y cambiarás tu vida.",
+      "🌊 Fluye con la vida.",
+      "🌟 Eres único, y eso te hace especial.",
+      "🍎 Cuida tu cuerpo y tu mente.",
+      "🌼 Sonríe, el mundo se ilumina contigo.",
+      "📚 Aprende algo nuevo hoy.",
+      "🎵 Baila, canta, vive.",
+      "💎 Tu valor no depende de nadie más."
+    ];
+    const aleatorio = Math.floor(Math.random() * mensajes.length);
+    document.getElementById("mensaje").textContent = mensajes[aleatorio];
+  </script>
+</body>
+</html>
